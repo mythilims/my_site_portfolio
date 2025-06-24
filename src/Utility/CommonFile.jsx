@@ -35,7 +35,7 @@ export const PROJECT_DETAILS = [
     company_name: "Rasi Infotech",
     des: "Developed a comprehensive ERP system for jewellery businesses to manage sales, estimation, inventory, customer relations, HR, and CRM. The system supports role-based admin control, custom orders, repairs, scheme & advance payments, and real-time alerts. It includes modules for billing, stock tracking, employee management, and detailed reporting",
     tech: ["React.js", "Reactstrap", "Bootstrap"],
-    role: ["Developed", "Mentor and monitor", "BugFixing"],
+    role: ["Developing", "Mentor and monitor", "BugFixing"],
   },
   {
     project_name: "enProject",
@@ -49,7 +49,7 @@ export const PROJECT_DETAILS = [
     company_name: "Rasi Infotech",
     des: "RFID-based Jewellery audit system for banks. Automatically tracks tagged jewellery through RFID setup and updates audit logs.",
     tech: ["React.js", "Reactstrap", "Bootstrap"],
-    role: ["Developed"],
+    role: ["Developing"],
   },
   {
     project_name: "Pocket Academy",
@@ -82,7 +82,7 @@ export const SKILLS = [
   { name: "React.js", level: 75, color: "bg-indigo-500", title: "Frontend" },
   { name: "JavaScript", level: 75, color: "bg-indigo-500", title: "Frontend" },
   { name: "Node.js", level: 50, color: "bg-sky-500", title: "Backend" },
-  { name: "Express.js", level: 50, color: "bg-sky-500", title: "Framework" },
+  { name: "Express.js", level: 50, color: "bg-indigo-500", title: "Framework" },
   // { name: "MongoDB", level: 65, color: "bg-sky-500" },
   // { name: "SQL", level: 60, color: "bg-sky-500" },
   { name: "VS code", level: 80, color: "bg-[#ffbd39]", title: "Tool" },

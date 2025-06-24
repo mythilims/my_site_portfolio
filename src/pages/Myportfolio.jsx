@@ -34,7 +34,9 @@ function Myportfolio() {
       {/* ✅ Header */}
       <header className="fixed top-0 left-0 w-full bg-[#0b1120]/90 z-50 shadow-xs z-40 shadow-[#e1d0d0]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex justify-between items-center">
-          <h1 className="sm:text-base md:text-2xl text-2xl font-bold">{PROFILE_NAME}</h1>          
+          <h1 className="sm:text-base md:text-2xl text-2xl font-bold">
+            {PROFILE_NAME}
+          </h1>
 
           {/* 🍔 Hamburger for mobile */}
           <div className="md:hidden">
@@ -81,10 +83,8 @@ function Myportfolio() {
         )}
       </header>
 
-     
-
       <section className="bg-[#0b1120] text-white " id="home">
-        <div  className="max-w-5xl mx-auto space-y-10  flex flex-col md:flex-row items-center pt-30 px-6 md:px-12 ">
+        <div className="max-w-5xl mx-auto space-y-10  flex flex-col md:flex-row items-center pt-30 px-6 md:px-12 ">
           <div className="md:w-1/2 ">
             <h2 className="text-3xl font-bold mb-4">
               {HELLO_TEXT}{" "}
@@ -303,6 +303,8 @@ function Myportfolio() {
                     {item.des}
                   </p>
                   <div className="flex flex-wrap gap-2 mt-2">
+                    <span className="text-sm font-bold text-[#ffbd39]">Tech:</span>
+
                     {item.tech.map((itemTech) => (
                       <span
                         key={itemTech}
@@ -310,6 +312,20 @@ function Myportfolio() {
                       >
                         {itemTech}
                       </span>
+                    ))}
+                  </div>
+                  <div className="flex flex-wrap gap-2 mt-2">
+                    <span className="text-sm font-bold text-[#ffbd39]">Role:</span>
+
+                    {item.role.map((itemTech) => (
+                      <>
+                        <span
+                          key={itemTech}
+                          className="bg-sky-700 px-3 py-1 rounded-full text-xs"
+                        >
+                          {itemTech}
+                        </span>
+                      </>
                     ))}
                   </div>
                 </div>
