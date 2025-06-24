@@ -303,22 +303,27 @@ function Myportfolio() {
                     {item.des}
                   </p>
                   <div className="flex flex-wrap gap-2 mt-2">
-                    <span className="text-sm font-bold text-[#ffbd39]">Tech:</span>
 
-                    {item.tech.map((itemTech) => (
-                      <span
+                    {item.tech.map((itemTech,key) => (
+                      <>
+                       {key ===0 && <span className="text-sm font-bold text-[#ffbd39]">Tech:</span>}
+                                           <span
                         key={itemTech}
                         className="bg-sky-700 px-3 py-1 rounded-full text-xs"
                       >
                         {itemTech}
                       </span>
+
+                      </>
+                     
                     ))}
                   </div>
                   <div className="flex flex-wrap gap-2 mt-2">
-                    <span className="text-sm font-bold text-[#ffbd39]">Role:</span>
 
-                    {item.role.map((itemTech) => (
+                    {item.role.map((itemTech,key) => (
                       <>
+                       {key ===0 && <span className="text-sm font-bold text-[#ffbd39]">Role:</span>}
+
                         <span
                           key={itemTech}
                           className="bg-sky-700 px-3 py-1 rounded-full text-xs"
