@@ -35,28 +35,28 @@ export const PROJECT_DETAILS = [
     company_name: "Rasi Infotech",
     des: "Developed a comprehensive ERP system for jewellery businesses to manage sales, estimation, inventory, customer relations, HR, and CRM. The system supports role-based admin control, custom orders, repairs, scheme & advance payments, and real-time alerts. It includes modules for billing, stock tracking, employee management, and detailed reporting",
     tech: ["React.js", "Reactstrap", "Bootstrap"],
-    role: ["Developing", "Mentor and monitor", "BugFixing"],
+    role: ["Developed", "Mentored & Monitored", "Fix Bugs"],
   },
   {
     project_name: "enProject",
     company_name: "Rasi Infotech",
     des: "Built an internal project and employee management system to track attendance, leave requests, bug reports, onboarding details, and support calls. The platform manages employee tasks, monitors bug-fix hours, and generates detailed reports. It centralizes company activities like project tracking, employee requests, and time logging for better productivity and transparency.",
     tech: ["React.js", "Reactstrap", "Bootstrap"],
-    role: ["Mentor and monitor"],
+    role: ["Mentored & Monitored"],
   },
   {
     project_name: "KVB Audit",
     company_name: "Rasi Infotech",
     des: "RFID-based Jewellery audit system for banks. Automatically tracks tagged jewellery through RFID setup and updates audit logs.",
     tech: ["React.js", "Reactstrap", "Bootstrap"],
-    role: ["Developing"],
+    role: ["Developed"],
   },
   {
     project_name: "Pocket Academy",
     company_name: "Rasi Infotech",
     des: "Software that streamlines academic and tutoring services delivery for educators and learners, online and offline.",
     tech: ["HTML", "CSS", "JavaScript", "Laravel"],
-    role: ["Developing", "BugFixing"],
+    role: ["Developed", "Fix Bugs"],
   },
 ];
 
