@@ -80,73 +80,73 @@ function Myportfolio() {
         )}
       </header>
 
-      {/* ✅ Sections Start Below */}
-      <section
-        id="home"
-        className="pt-20 sm:pt-20 md:pt-50 sm:p-10 md:p-6 flex flex-col md:flex-row items-center"
-      >
-        <div className="md:w-1/2">
-          <h2 className="text-3xl font-bold mb-4">
-            {HELLO_TEXT} <span className="text-[#ffbd39]">{PROFILE_NAME}</span>
-          </h2>
-          <p className="text-lg font-light">{ROLE_DEC}</p>
-          <div className="flex flex-col lg:flex-row gap-4 mt-6 items-center sm:items-start">
-            {/* <button className="rounded-md bg-[#ffbd39] px-4 py-2 text-white font-semibold hover:bg-[#0d6efd] w-full sm:w-auto">
+     
+
+      <section className="bg-[#0b1120] text-white " id="home">
+        <div className="max-w-5xl mx-auto space-y-10  flex flex-col md:flex-row items-center pt-30 px-6 md:px-12 ">
+          <div className="md:w-1/2 ">
+            <h2 className="text-3xl font-bold mb-4">
+              {HELLO_TEXT}{" "}
+              <span className="text-[#ffbd39]">{PROFILE_NAME}</span>
+            </h2>
+            <p className="text-lg font-light">{ROLE_DEC}</p>
+            <div className="flex flex-col lg:flex-row gap-4 mt-6 items-center sm:items-start">
+              {/* <button className="rounded-md bg-[#ffbd39] px-4 py-2 text-white font-semibold hover:bg-[#0d6efd] w-full sm:w-auto">
               
 
             </button> */}
 
-            <div className="flex justify-center gap-4 sm:justify-start">
-              <a
-                href={cv}
-                title="Download  CV"
-                download
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-[#ffbd39] px-4 py-2 rounded-md hover:bg-[#084ba0] text-white font-semibold flex items-center gap-2 text-sm sm:text-base md:text-lg"
-              >
-                <i className="fa-regular fa-file"> </i> <span>Download CV</span>
-              </a>
-              <a
-                href="https://www.linkedin.com/in/s-mythili-sundarajan"
-                target="_blank"
-                rel="noopener noreferrer"
-                title="linkedin"
+              <div className="flex justify-center gap-4 sm:justify-start">
+                <a
+                  href={cv}
+                  title="Download  CV"
+                  download
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-[#ffbd39] px-4 py-2 rounded-md hover:bg-[#084ba0] text-white font-semibold flex items-center gap-2 text-sm sm:text-base md:text-lg"
+                >
+                  <i className="fa-regular fa-file"> </i>{" "}
+                  <span>Download CV</span>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/s-mythili-sundarajan"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="linkedin"
+                  className="bg-[#0a66c2] px-4 py-2 rounded-md hover:bg-[#084ba0] text-white font-semibold flex items-center gap-2 text-sm sm:text-base md:text-lg"
+                >
+                  <i className="fab fa-linkedin"></i>
+                </a>
 
-                className="bg-[#0a66c2] px-4 py-2 rounded-md hover:bg-[#084ba0] text-white font-semibold flex items-center gap-2 text-sm sm:text-base md:text-lg"
-              >
-                <i className="fab fa-linkedin"></i>
-              </a>
+                {/* GitHub */}
+                <a
+                  href="https://github.com/mythilims"
+                  target="_blank"
+                  title="github"
+                  rel="noopener noreferrer"
+                  className="bg-gray-800 px-4 py-2 rounded-md hover:bg-black text-white font-semibold flex items-center gap-2 text-sm sm:text-base md:text-lg"
+                >
+                  <i className="fab fa-github"></i>
+                </a>
 
-              {/* GitHub */}
-              <a
-                href="https://github.com/mythilims"
-                target="_blank"
-                title="github"
-                rel="noopener noreferrer"
-                className="bg-gray-800 px-4 py-2 rounded-md hover:bg-black text-white font-semibold flex items-center gap-2 text-sm sm:text-base md:text-lg"
-              >
-                <i className="fab fa-github"></i>
-              </a>
-
-              {/* Email */}
-              <a
-                href="mailto:mythilijobofficial@gmail.com"
-                title="gmail"
-
-                className="bg-green-600 px-4 py-2 rounded-md hover:bg-green-700 text-white font-semibold flex items-center gap-2 text-sm sm:text-base md:text-lg"
-              >
-                <i className="fas fa-envelope"></i>
-              </a>
+                {/* Email */}
+                <a
+                  href="mailto:mythilijobofficial@gmail.com"
+                  title="gmail"
+                  className="bg-green-600 px-4 py-2 rounded-md hover:bg-green-700 text-white font-semibold flex items-center gap-2 text-sm sm:text-base md:text-lg"
+                >
+                  <i className="fas fa-envelope"></i>
+                </a>
+              </div>
             </div>
           </div>
-        </div>
-        <div className="md:w-1/2 mt-6 md:mt-0 flex justify-center">
-          <img
-            src={Profile}
-            alt="Profile"
-            className="w-64 h-64 rounded-full object-cover shadow-lg"
-          />
+          <div className="md:w-1/2 mt-6 md:mt-0 flex justify-center">
+            <img
+              src={Profile}
+              alt="Profile"
+              className="w-64 h-64 rounded-full object-cover shadow-lg"
+            />
+          </div>
         </div>
       </section>
 
