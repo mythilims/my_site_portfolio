@@ -6,6 +6,7 @@ import {
   SKILLS,
   NAV_BAR,
   PROFILE_NAME,
+  PROFILE_ROLE,
   COMPANY_NAME,
   PROFILE_EMAIL,
   HELLO_TEXT,
@@ -33,7 +34,7 @@ function Myportfolio() {
       {/* ✅ Header */}
       <header className="fixed top-0 left-0 w-full bg-[#0b1120]/90 z-50 shadow-xs z-40 shadow-[#e1d0d0]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex justify-between items-center">
-          <h1 className="text-2xl font-bold">{PROFILE_NAME}</h1>
+          <h1 className="sm:text-base md:text-2xl text-2xl font-bold">{PROFILE_NAME}</h1>          
 
           {/* 🍔 Hamburger for mobile */}
           <div className="md:hidden">

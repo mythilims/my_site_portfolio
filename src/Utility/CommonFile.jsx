@@ -1,4 +1,6 @@
 export const PROFILE_NAME = "Mythili";
+export const PROFILE_ROLE = "Frontend developer";
+
 export const COMPANY_NAME = "Rasi Infotech";
 export const HELLO_TEXT = `Hello, I'm `;
 export const ROLE_DEC = `Creative Frontend Developer I build responsive, user-friendly web
@@ -33,7 +35,7 @@ export const PROJECT_DETAILS = [
     company_name: "Rasi Infotech",
     des: "Developed a comprehensive ERP system for jewellery businesses to manage sales, estimation, inventory, customer relations, HR, and CRM. The system supports role-based admin control, custom orders, repairs, scheme & advance payments, and real-time alerts. It includes modules for billing, stock tracking, employee management, and detailed reporting",
     tech: ["React.js", "Reactstrap", "Bootstrap"],
-    role:["Developed", "Mentor and monitor","BugFixing"],
+    role: ["Developed", "Mentor and monitor", "BugFixing"],
   },
   {
     project_name: "enProject",
@@ -47,41 +49,46 @@ export const PROJECT_DETAILS = [
     company_name: "Rasi Infotech",
     des: "RFID-based Jewellery audit system for banks. Automatically tracks tagged jewellery through RFID setup and updates audit logs.",
     tech: ["React.js", "Reactstrap", "Bootstrap"],
-    role:["Developed"],
-
+    role: ["Developed"],
   },
   {
     project_name: "Pocket Academy",
     company_name: "Rasi Infotech",
     des: "Software that streamlines academic and tutoring services delivery for educators and learners, online and offline.",
     tech: ["HTML", "CSS", "JavaScript", "Laravel"],
-    role:["Developing","BugFixing"],
-
+    role: ["Developing", "BugFixing"],
   },
 ];
 
 export const SKILLS = [
-  { name: "HTML", level: 80, color: "bg-indigo-500", title: "Frontend" },
+  { name: "HTML", level: 75, color: "bg-indigo-500", title: "Frontend" },
   { name: "CSS", level: 75, color: "bg-indigo-500", title: "Frontend" },
   { name: "Bootstrap", level: 75, color: "bg-indigo-500", title: "Framework" },
+  {
+    name: "Tailwindcss",
+    level: 20,
+    color: "bg-indigo-500",
+    title: "Framework",
+  },
+
   {
     name: "Reactstrap",
     level: 75,
     color: "bg-indigo-500",
-    title: "UI  Library",
+    title: "UI Library",
   },
-  { name: "MUI", level: 70, color: "bg-indigo-500", title: "UI  Library" },
+  { name: "MUI", level: 70, color: "bg-indigo-500", title: "UI Library" },
 
-  { name: "React.js", level: 80, color: "bg-indigo-500", title: "Frontend" },
-  { name: "JavaScript", level: 88, color: "bg-indigo-500", title: "Frontend" },
+  { name: "React.js", level: 75, color: "bg-indigo-500", title: "Frontend" },
+  { name: "JavaScript", level: 75, color: "bg-indigo-500", title: "Frontend" },
   { name: "Node.js", level: 50, color: "bg-sky-500", title: "Backend" },
   { name: "Express.js", level: 50, color: "bg-sky-500", title: "Framework" },
   // { name: "MongoDB", level: 65, color: "bg-sky-500" },
   // { name: "SQL", level: 60, color: "bg-sky-500" },
-  { name: "VS Code", level: 80, color: "bg-[#ffbd39]", title: "Tool" },
-  { name: "Git", level: 70, color: "bg-[#ffbd39]", title: "Tool" },
+  { name: "VS code", level: 80, color: "bg-[#ffbd39]", title: "Tool" },
+  { name: "Bitbucket", level: 70, color: "bg-[#ffbd39]", title: "Tool" },
   { name: "GitHub", level: 70, color: "bg-[#ffbd39]", title: "Tool" },
 ];
 export const PROFILE_EMAIL = "mythilijobofficial@gmail.com";
 export const NAV_BAR = ["Home", "About", "Skills", "Projects", "Contact"];
-export const CONTACT ='Contact Me';
+export const CONTACT = "Contact Me";
