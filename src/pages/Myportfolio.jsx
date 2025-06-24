@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Profile from "../../public/Profile.png"; // your profile image
-import cv from "../../public/s_mythili.pdf"; // your profile image
+import Profile from "../assets/profile.png"; // your profile image
+import cv from "../assets/s_mythili.pdf"; // your profile image
 
 import {
   SKILLS,
