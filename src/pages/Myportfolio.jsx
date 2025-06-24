@@ -69,7 +69,7 @@ function Myportfolio() {
                   <a
                     key={item}
                     href={`#${item.toLowerCase()}`}
-                    className="hover:text-lime-400"
+                    className="hover:text-blue-400"
                     onClick={() => setMenuOpen(false)}
                   >
                     {item}
@@ -326,7 +326,7 @@ function Myportfolio() {
           <i className="fa fa-envelope mr-2"></i> {CONTACT}
         </h2>
 
-        <div className="max-w-3xl mx-auto bg-[#131c31] p-6 md:p-10 rounded-xl shadow-lg shadow-lime-400/10">
+        <div className="max-w-3xl mx-auto bg-[#131c31] p-6 md:p-10 rounded-xl shadow-lg shadow-blue-400/10">
           <form className="space-y-6">
             <div>
               <label
@@ -339,7 +339,7 @@ function Myportfolio() {
                 type="text"
                 id="name"
                 placeholder="Enter your name"
-                className="w-full px-4 py-2 bg-[#0b1120] border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-lime-500 text-white"
+                className="w-full px-4 py-2 bg-[#0b1120] border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-white"
               />
             </div>
 
@@ -354,7 +354,7 @@ function Myportfolio() {
                 type="email"
                 id="email"
                 placeholder="Enter your email"
-                className="w-full px-4 py-2 bg-[#0b1120] border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-lime-500 text-white"
+                className="w-full px-4 py-2 bg-[#0b1120] border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-white"
               />
             </div>
 
@@ -369,7 +369,7 @@ function Myportfolio() {
                 id="message"
                 rows="4"
                 placeholder="Write your message..."
-                className="w-full px-4 py-2 bg-[#0b1120] border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-lime-500 text-white"
+                className="w-full px-4 py-2 bg-[#0b1120] border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-white"
               ></textarea>
             </div>
 
