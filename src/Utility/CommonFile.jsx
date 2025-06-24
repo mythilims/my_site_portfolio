@@ -39,7 +39,8 @@ export const PROJECT_DETAILS = [
     project_name: "enProject",
     company_name: "Rasi Infotech",
     des: "Built an internal project and employee management system to track attendance, leave requests, bug reports, onboarding details, and support calls. The platform manages employee tasks, monitors bug-fix hours, and generates detailed reports. It centralizes company activities like project tracking, employee requests, and time logging for better productivity and transparency.",
-    tech: ["Mentor and monitor"],
+    tech: ["React.js", "Reactstrap", "Bootstrap"],
+    role: ["Mentor and monitor"],
   },
   {
     project_name: "KVB Audit",
