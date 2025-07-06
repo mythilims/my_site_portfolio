@@ -16,6 +16,7 @@ import {
   UG_EDUCATION_DETAILS,
   PROJECT_DETAILS,
   CONTACT,
+  MERN_PROJECT_DETAILS,
 } from "../Utility/CommonFile";
 function Myportfolio() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -66,31 +67,54 @@ function Myportfolio() {
         {menuOpen && (
           <div className="md:hidden bg-[#0b1120] px-4 pb-4">
             <nav className="flex flex-col space-y-3 text-sm font-semibold">
-              {["Home", "About", "Skills", "Projects", "Contact"].map(
-                (item) => (
-                  <a
-                    key={item}
-                    href={`#${item.toLowerCase()}`}
-                    className="hover:text-blue-400"
-                    onClick={() => setMenuOpen(false)}
-                  >
-                    {item}
-                  </a>
-                )
-              )}
+              {[
+                "Home",
+                "About",
+                "Skills",
+                "Projects",
+                // "Contact"
+              ].map((item) => (
+                <a
+                  key={item}
+                  href={`#${item.toLowerCase()}`}
+                  className="hover:text-blue-400"
+                  onClick={() => setMenuOpen(false)}
+                >
+                  {item}
+                </a>
+              ))}
             </nav>
           </div>
         )}
       </header>
 
-      <section className="bg-[#0b1120] text-white " id="home">
-        <div className="max-w-5xl mx-auto space-y-10  flex flex-col md:flex-row items-center pt-30 px-6 md:px-12 ">
-          <div className="md:w-1/2 ">
+      <section className="bg-[#0b1120] text-white  pt-20 px-6  " id="home">
+        {/* max-w-5xl mx-auto space-y-10  
+        flex flex-col md:flex-row items-start md:items-center
+          md:px-12 */}
+        <div
+          className="max-w-5xl mx-auto space-y-10  
+          md:px-12 "
+        >
+          <div className="md:w-1/1 ">
             <h2 className="text-3xl font-bold mb-4">
               {HELLO_TEXT}{" "}
-              <span className="text-[#ffbd39]">{PROFILE_NAME}</span>
+              <span className="leading-relaxed">{PROFILE_NAME}</span>
+              <br />
+              <p className="text-[#ffbd39] text-lg">
+                {" "}
+                <br />
+                Front-End - MERN Stack Developer (Immediate Joiner)
+              </p>
             </h2>
             <p className="text-lg font-light">{ROLE_DEC}</p>
+            <br />
+            <p className="text-lg leading-relaxed text-justify">
+              Currently undergoing professional training in MERN Stack (Node.js,
+              Express.js, MongoDB) for the past 3 months to transition into a
+              full-stack role.
+            </p>
+            <br />
             <div className="flex flex-col lg:flex-row gap-4 mt-6 items-center sm:items-start">
               {/* <button className="rounded-md bg-[#ffbd39] px-4 py-2 text-white font-semibold hover:bg-[#0d6efd] w-full sm:w-auto">
               
@@ -141,13 +165,13 @@ function Myportfolio() {
               </div>
             </div>
           </div>
-          <div className="md:w-1/2 mt-6 md:mt-0 flex justify-center">
+          {/* <div className="md:w-1/2 mt-6 md:mt-0 flex justify-center">
             <img
               src={Profile}
               alt="Profile"
               className="w-64 h-64 rounded-full object-cover shadow-lg"
             />
-          </div>
+          </div> */}
         </div>
       </section>
 
@@ -302,27 +326,62 @@ function Myportfolio() {
                   <p className="text-sm leading-relaxed text-gray-200">
                     {item.des}
                   </p>
-                  <div className="flex flex-wrap gap-2 mt-2">
-
-                    {item.tech.map((itemTech,key) => (
-                      <>
-                       {key ===0 && <span className="text-sm font-bold text-[#ffbd39]">Tech:</span>}
-                                           <span
-                        key={itemTech}
-                        className="bg-sky-700 px-3 py-1 rounded-full text-xs"
-                      >
-                        {itemTech}
-                      </span>
-
-                      </>
-                     
-                    ))}
+                  <div className="grid grid-cols-[60px_1fr] gap-2 items-start">
+                    <span className="text-sm font-bold text-[#ffbd39]">
+                      Tech:
+                    </span>
+                    <div className="flex flex-wrap gap-2">
+                      {item.tech.map((itemTech) => (
+                        <span
+                          key={itemTech}
+                          className="bg-sky-700 text-white px-3 py-1 rounded-full text-xs"
+                        >
+                          {itemTech}
+                        </span>
+                      ))}
+                    </div>
                   </div>
-                  <div className="flex flex-wrap gap-2 mt-2">
-
-                    {item.role.map((itemTech,key) => (
+                  <div className="grid grid-cols-[60px_1fr] gap-2 items-start">
+                    <span className="text-sm font-bold text-[#ffbd39]">
+                      Role:
+                    </span>
+                    <div className="flex flex-wrap gap-2">
+                      {item.role.map((itemTech) => (
+                        <span
+                          key={itemTech}
+                          className="bg-sky-700 text-white px-3 py-1 rounded-full text-xs"
+                        >
+                          {itemTech}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                  {/* <div className="flex flex-wrap gap-2 mt-2">
+                    <span className="text-sm font-bold text-[#ffbd39]">
+                      Tech:
+                    </span>
+                    {item.tech.map((itemTech, key) => (
                       <>
-                       {key ===0 && <span className="text-sm font-bold text-[#ffbd39]">Role:</span>}
+                        <div className="">
+                          <span
+                            key={itemTech}
+                            className="bg-sky-700 px-3 py-1 rounded-full text-xs"
+                          >
+                            {itemTech}
+                          </span>
+                        </div>
+                        
+                      </>
+                    ))}
+                  </div> */}
+                  {/* <div className="flex flex-wrap gap-2 mt-2">
+                    {item.role.map((itemTech, key) => (
+                      <>
+                        {key === 0 && (
+                          <span className="text-sm font-bold text-[#ffbd39]">
+                            Role:
+                          </span>
+                        )}
 
                         <span
                           key={itemTech}
@@ -332,14 +391,108 @@ function Myportfolio() {
                         </span>
                       </>
                     ))}
+                  </div> */}
+                </div>
+              </>
+            );
+          })}
+        </div>
+        <br />
+
+        <h2 className="text-3xl font-bold text-center mb-10">
+          <i className="fa fa-laptop-code	  mr-2"></i> MERN Stack Projects
+          (During Learning)
+        </h2>
+
+        <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+          {/* Project 1: Zinger */}
+          {MERN_PROJECT_DETAILS.map((item, key) => {
+            return (
+              <>
+                <div
+                  className="bg-[#1a2238] rounded-xl shadow-lg p-6 space-y-3"
+                  key={key}
+                >
+                  <h3 className="text-xl font-bold text-[#ffbd39]">
+                    {item.project_name}
+                  </h3>
+                  {/* <p className="text-sm text-gray-300">{item.company_name}</p> */}
+                  <p className="text-sm leading-relaxed text-gray-200">
+                    {item.des}
+                  </p>
+                  {/* <div className="flex flex-wrap gap-2 mt-2">
+                    {item.tech.map((itemTech, key) => (
+                      <>
+                        {key === 0 && (
+                          <span className="text-sm font-bold text-[#ffbd39]">
+                            Tech:
+                          </span>
+                        )}
+                        <span
+                          key={itemTech}
+                          className="bg-sky-700 px-3 py-1 rounded-full text-xs"
+                        >
+                          {itemTech}
+                        </span>
+                      </>
+                    ))}
+                  </div> */}
+                  <div className="grid grid-cols-[60px_1fr] gap-2 items-start">
+                    <span className="text-sm font-bold text-[#ffbd39]">
+                      Tech:
+                    </span>
+                    <div className="flex flex-wrap gap-2">
+                      {item.tech.map((itemTech) => (
+                        <span
+                          key={itemTech}
+                          className="bg-sky-700 text-white px-3 py-1 rounded-full text-xs"
+                        >
+                          {itemTech}
+                        </span>
+                      ))}
+                    </div>
                   </div>
+                  <div className="grid grid-cols-[60px_1fr] gap-2 items-start">
+                    <span className="text-sm font-bold text-[#ffbd39]">
+                      Role:
+                    </span>
+                    <div className="flex flex-wrap gap-2">
+                      {item.role.map((itemTech) => (
+                        <span
+                          key={itemTech}
+                          className="bg-sky-700 text-white px-3 py-1 rounded-full text-xs"
+                        >
+                          {itemTech}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                  {/* <div className="flex flex-wrap gap-2 mt-2">
+                    {item.role.map((itemTech, key) => (
+                      <>
+                        {key === 0 && (
+                          <span className="text-sm font-bold text-[#ffbd39]">
+                            Role:
+                          </span>
+                        )}
+
+                        <span
+                          key={itemTech}
+                          className="bg-sky-700 px-3 py-1 rounded-full text-xs"
+                        >
+                          {itemTech}
+                        </span>
+                      </>
+                    ))}
+                  </div> */}
                 </div>
               </>
             );
           })}
         </div>
       </section>
-      <section
+
+      {/* <section
         id="contact"
         className="bg-[#0b1120] text-white pt-20 px-6 md:px-12 pb-10"
       >
@@ -404,7 +557,7 @@ function Myportfolio() {
             </div>
           </form>
         </div>
-      </section>
+      </section> */}
 
       {/* ✅ Footer */}
       <footer className="text-center text-xs p-4 mt-10 text-gray-400">
