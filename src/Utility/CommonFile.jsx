@@ -63,13 +63,13 @@ export const PROJECT_DETAILS = [
 export const MERN_PROJECT_DETAILS = [
   {
     project_name: "Notes Manage App",
-    des: "A secure and responsive Note Management App built using the MERN Stack (MongoDB, Express.js, React.js, Node.js). Users can create, edit, delete, and search personal notes with real-time feedback",
+    des: "Your personal digital notebook – write, update, and organize notes anytime, anywhere ,User registration and login with JWT token authentication,Create, edit, delete, and view personal notes",
     tech: ["Redux toolkit","React.js", "Tailwindcss", "Node.js","Express.js","MongoDB"],
     role: ["Developing",],
   },
   {
     project_name: "Expense Tracker",
-    des: "A modern Expense Tracker App that helps users manage their income and expenses. Built using React for frontend and Node.js/Express/MongoDB for backend, the app allows users to track spending, categorize transactions, and monitor their financial habits.",
+    des: "An Expense Tracker helps users manage, monitor, and analyze their spending for better financial planning,Add new expenses with category and amount,View all transactions in a structured list",
     tech: ["React.js", "MUI", "Node.js","Express.js","MongoDB"],
     role: ["Developing"],
   }
