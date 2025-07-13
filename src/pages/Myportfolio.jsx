@@ -18,6 +18,8 @@ import {
   CONTACT,
   MERN_PROJECT_DETAILS,
 } from "../Utility/CommonFile";
+
+
 function Myportfolio() {
   const [menuOpen, setMenuOpen] = useState(false);
   const groupedSkills = SKILLS.reduce((acc, skill) => {
@@ -72,6 +74,7 @@ function Myportfolio() {
                 "About",
                 "Skills",
                 "Projects",
+                // "Services"
                 // "Contact"
               ].map((item) => (
                 <a
@@ -128,7 +131,7 @@ function Myportfolio() {
                   download
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-[#ffbd39] px-4 py-2 rounded-md hover:bg-[#084ba0] text-white font-semibold flex items-center gap-2 text-sm sm:text-base md:text-lg"
+                  className="bg-[#ffbd39]  rounded-md hover:bg-[#084ba0]  font-semibold flex items-center gap-2 text-white text-[11px] sm:text-xs px-3 sm:px-4 py-1.5 sm:py-2"
                 >
                   <i className="fa-regular fa-file"> </i>{" "}
                   <span>Download CV</span>
@@ -138,7 +141,7 @@ function Myportfolio() {
                   target="_blank"
                   rel="noopener noreferrer"
                   title="linkedin"
-                  className="bg-[#0a66c2] px-4 py-2 rounded-md hover:bg-[#084ba0] text-white font-semibold flex items-center gap-2 text-sm sm:text-base md:text-lg"
+                  className="bg-[#0a66c2] rounded-md hover:bg-[#084ba0] text-white font-semibold flex items-center gap-2 text-white text-[11px] sm:text-xs px-3 sm:px-4 py-1.5 sm:py-2"
                 >
                   <i className="fab fa-linkedin"></i>
                 </a>
@@ -149,7 +152,7 @@ function Myportfolio() {
                   target="_blank"
                   title="github"
                   rel="noopener noreferrer"
-                  className="bg-gray-800 px-4 py-2 rounded-md hover:bg-black text-white font-semibold flex items-center gap-2 text-sm sm:text-base md:text-lg"
+                  className="bg-gray-800  rounded-md hover:bg-black text-white font-semibold flex items-center gap-2 text-white text-[11px] sm:text-xs px-3 sm:px-4 py-1.5 sm:py-2"
                 >
                   <i className="fab fa-github"></i>
                 </a>
@@ -158,7 +161,7 @@ function Myportfolio() {
                 <a
                   href="mailto:mythilijobofficial@gmail.com"
                   title="gmail"
-                  className="bg-green-600 px-4 py-2 rounded-md hover:bg-green-700 text-white font-semibold flex items-center gap-2 text-sm sm:text-base md:text-lg"
+                  className="bg-green-600  rounded-md hover:bg-green-700 text-white font-semibold flex items-center gap-2 text-white text-[11px] sm:text-xs px-3 sm:px-4 py-1.5 sm:py-2"
                 >
                   <i className="fas fa-envelope"></i>
                 </a>
@@ -316,7 +319,7 @@ function Myportfolio() {
             return (
               <>
                 <div
-                  className="bg-[#1a2238] rounded-xl shadow-lg p-6 space-y-3"
+                  className="bg-[#1a2238] rounded-xl shadow-lg p-6 space-y-3 hover:scale-[1.02] transition duration-300"
                   key={key}
                 >
                   <h3 className="text-xl font-bold text-[#ffbd39]">
@@ -410,12 +413,37 @@ function Myportfolio() {
             return (
               <>
                 <div
-                  className="bg-[#1a2238] rounded-xl shadow-lg p-6 space-y-3"
+                  className="bg-[#1a2238] rounded-xl shadow-lg p-6 space-y-3 hover:scale-[1.02] transition duration-300"
                   key={key}
                 >
-                  <h3 className="text-xl font-bold text-[#ffbd39]">
-                    {item.project_name}
-                  </h3>
+                  
+                
+              <div className="flex justify-between items-center flex-wrap gap-3">
+  <h3 className="text-xl font-bold text-[#ffbd39]">
+    {item.project_name}
+  </h3>
+
+  <div className="flex gap-4">
+   <a
+  href={item.live_url}
+  target="_blank"
+  className="bg-green-600 hover:bg-green-700 text-white text-[11px] sm:text-xs px-3 sm:px-4 py-1.5 sm:py-2 rounded font-bold text-center"
+>
+  Live Demo
+</a>
+
+<a
+  href={item.code_url}
+  target="_blank"
+  className="bg-gray-700 hover:bg-gray-600 text-white text-[11px] sm:text-xs px-3 sm:px-4 py-1.5 sm:py-2 rounded font-bold text-center"
+>
+  View Code
+</a>
+
+  </div>
+</div>
+
+
                   {/* <p className="text-sm text-gray-300">{item.company_name}</p> */}
                   <p className="text-sm leading-relaxed text-gray-200">
                     {item.des}
@@ -467,6 +495,14 @@ function Myportfolio() {
                       ))}
                     </div>
                   </div>
+                  {/* <div className="flex gap-4 pt-3">
+                <a href={item.live_url} target="_blank" className="bg-green-600 hover:bg-green-700 text-white text-xs px-4 py-2 rounded font-bold">
+                  Live Demo
+                </a>
+                <a href={item.code_url} target="_blank" className="bg-gray-700  hover:bg-gray-400 text-white text-xs px-4 py-2 rounded font-bold">
+                  View Code
+                </a>
+              </div> */}
                   {/* <div className="flex flex-wrap gap-2 mt-2">
                     {item.role.map((itemTech, key) => (
                       <>
@@ -491,6 +527,7 @@ function Myportfolio() {
           })}
         </div>
       </section>
+ 
 
       {/* <section
         id="contact"
