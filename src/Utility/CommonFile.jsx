@@ -61,14 +61,7 @@ export const PROJECT_DETAILS = [
 ];
 
 export const MERN_PROJECT_DETAILS = [
-  {
-    project_name: "Notes Manage App",
-    des: "Your personal digital notebook – write, update, and organize notes anytime, anywhere ,User registration and login with JWT token authentication,Create, edit, delete, and view personal notes",
-    tech: ["Redux toolkit","React.js", "Tailwindcss", "Node.js","Express.js","MongoDB"],
-    role: ["Developing"],
-     live_url: "https://mernstacknotesapp-yjii.onrender.com",
-    code_url: "https://github.com/mythilims/mernStackNotesApp"
-  },
+ 
   {
     project_name: "Expense Tracker",
     des: "An Expense Tracker helps users manage, monitor, and analyze their spending for better financial planning,Add new expenses with category and amount,View all transactions in a structured list",
@@ -76,6 +69,13 @@ export const MERN_PROJECT_DETAILS = [
     role: ["Developing"],
      live_url: "https://expensetrackernodejsui.onrender.com",
     code_url: "https://github.com/mythilims/ExpenseTrackerNodejs"
+  }, {
+    project_name: "Notes Manage App",
+    des: "Your personal digital notebook – write, update, and organize notes anytime, anywhere ,User registration and login with JWT token authentication,Create, edit, delete, and view personal notes",
+    tech: ["Redux toolkit","React.js", "Tailwindcss", "Node.js","Express.js","MongoDB"],
+    role: ["Developing"],
+     live_url: "https://mernstacknotesapp-yjii.onrender.com",
+    code_url: "https://github.com/mythilims/mernStackNotesApp"
   }
 ];
 
