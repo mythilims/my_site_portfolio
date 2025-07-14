@@ -113,9 +113,8 @@ function Myportfolio() {
             <p className="text-lg font-light">{ROLE_DEC}</p>
             <br />
             <p className="text-lg leading-relaxed text-justify">
-              Currently undergoing professional training in MERN Stack (Node.js,
-              Express.js, MongoDB) for the past 3 months to transition into a
-              full-stack role.
+             
+              Currently undergoing professional training in MERN Stack (MongoDB, Express.js, Node.js) since May 2025 to transition into a full-stack developer role
             </p>
             <br />
             <div className="flex flex-col lg:flex-row gap-4 mt-6 items-center sm:items-start">
