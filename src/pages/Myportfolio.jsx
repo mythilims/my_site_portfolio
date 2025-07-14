@@ -5,6 +5,26 @@ import cv from "../assets/Mythili_S.pdf"; // your profile image
 // import certificatePDF from "../assets/mern_certificate.pdf"; // optional PDF
 let certificateImg;
 let certificatePDF;
+import {
+  FileText,
+  Github,
+  Mail,
+  Briefcase,
+  GraduationCap,
+  Award,
+  Code,
+  Code2,
+  ExternalLink,
+  Monitor,
+  ToolCase,
+  ToolCaseIcon,
+  User,
+  Wrench,
+  Link2Icon,
+  Linkedin,
+  BriefcaseBusiness,
+  LaptopMinimalCheck,
+} from "lucide-react";
 
 import {
   SKILLS,
@@ -137,7 +157,7 @@ function Myportfolio() {
                   rel="noopener noreferrer"
                   className="bg-[#ffbd39]  rounded-md hover:bg-[#084ba0]  font-semibold flex items-center gap-2 text-white text-[11px] sm:text-xs px-3 sm:px-4 py-1.5 sm:py-2"
                 >
-                  <i className="fa-regular fa-file"> </i>{" "}
+                  <FileText className="h-4 w-4 text-white-400" />{" "}
                   <span>Download CV</span>
                 </a>
                 <a
@@ -147,7 +167,7 @@ function Myportfolio() {
                   title="linkedin"
                   className="bg-[#0a66c2] rounded-md hover:bg-[#084ba0] text-white font-semibold flex items-center gap-2 text-white text-[11px] sm:text-xs px-3 sm:px-4 py-1.5 sm:py-2"
                 >
-                  <i className="fab fa-linkedin"></i>
+                  <Linkedin className="h-4 w-4 text-white-400" />
                 </a>
 
                 {/* GitHub */}
@@ -158,7 +178,7 @@ function Myportfolio() {
                   rel="noopener noreferrer"
                   className="bg-gray-800  rounded-md hover:bg-black text-white font-semibold flex items-center gap-2 text-white text-[11px] sm:text-xs px-3 sm:px-4 py-1.5 sm:py-2"
                 >
-                  <i className="fab fa-github"></i>
+                  <Github className="h-4 w-4 text-white-400" />
                 </a>
 
                 {/* Email */}
@@ -167,7 +187,7 @@ function Myportfolio() {
                   title="gmail"
                   className="bg-green-600  rounded-md hover:bg-green-700 text-white font-semibold flex items-center gap-2 text-white text-[11px] sm:text-xs px-3 sm:px-4 py-1.5 sm:py-2"
                 >
-                  <i className="fas fa-envelope"></i>
+                  <Mail className="h-4 w-4 text-white-400" />
                 </a>
               </div>
             </div>
@@ -186,8 +206,11 @@ function Myportfolio() {
         className="bg-[#0b1120] text-white pt-20 px-6 md:px-12"
         id="about"
       >
-        <h2 className="text-3xl font-bold text-center mb-10">
+        {/* <h2 className="text-3xl font-bold text-center mb-10">
           <i className="fa fa-female	mr-2"></i> About Me
+        </h2> */}
+        <h2 className="text-3xl font-bold flex items-center justify-center gap-2 mb-10">
+          <User className="w-8 h-8 text-yellow-400" /> About Me
         </h2>
 
         <div className="max-w-5xl mx-auto space-y-10">
@@ -213,8 +236,9 @@ function Myportfolio() {
 
           {/* Experience Card */}
           <div>
-            <h3 className="text-xl font-semibold text-[#ffbd39] mb-4">
-              <i className="fa fa-briefcase mr-2"></i> Experience
+            <h3 className="text-xl flex items-center gap-3 font-semibold text-[#ffbd39] mb-4">
+              <BriefcaseBusiness className="h-6 w-6 text-white-400" />
+              Experience
             </h3>
             <div className="bg-[#1a2238] shadow-lg rounded-xl p-6 space-y-2">
               <p className="text-lg font-semibold">
@@ -234,8 +258,8 @@ function Myportfolio() {
           </div>
 
           <div>
-            <h3 className="text-xl font-semibold text-[#ffbd39] mb-4">
-              <i className="fa fa-graduation-cap mr-2"></i>
+            <h3 className="text-xl flex items-center gap-3 font-semibold text-[#ffbd39] mb-4">
+              <GraduationCap className="h-6 w-6 text-white-400" />
               Education
             </h3>
             <div className="grid md:grid-cols-2 gap-6">
@@ -273,9 +297,12 @@ function Myportfolio() {
         className="bg-[#0b1120] text-white pt-20 px-6 md:px-12"
         id="skills"
       >
-        <h2 className="text-3xl font-bold text-center mb-10">
+        {/* <h2 className="text-3xl font-bold text-center mb-10">
           <i className="fa fa-tools mr-2"></i>
           My Technical Skills
+        </h2> */}
+        <h2 className="text-3xl font-bold flex items-center justify-center gap-2 mb-10">
+          <Wrench className="w-8 h-8 text-yellow-400" /> My Technical Skills
         </h2>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -313,9 +340,12 @@ function Myportfolio() {
         className="bg-[#0b1120] text-white pt-20 px-6 md:px-12"
         id="projects"
       >
-        <h2 className="text-3xl font-bold text-center mb-10">
-          <i className="fa fa-laptop-code	  mr-2"></i> Projects & Experience
+        <h2 className="text-3xl font-bold flex items-center justify-center gap-2 mb-10">
+          <Monitor className="w-8 h-8 text-yellow-400" /> Projects & Experience
         </h2>
+        {/* <h2 className="text-3xl font-bold text-center mb-10">
+          <i className="fa fa-laptop-code	  mr-2"></i> Projects & Experience
+        </h2> */}
 
         <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {/* Project 1: Zinger */}
@@ -370,8 +400,8 @@ function Myportfolio() {
         </div>
         <br />
 
-        <h2 className="text-3xl font-bold text-center mb-10">
-          <i className="fa fa-laptop-code	  mr-2"></i> MERN Stack Projects
+        <h2 className="text-3xl font-bold flex items-center justify-center gap-2 mb-8">
+          <LaptopMinimalCheck className="w-8 h-8 text-yellow-400" /> MERN Stack Projects
           (During Learning)
         </h2>
 
@@ -454,8 +484,9 @@ function Myportfolio() {
         className="bg-[#0b1120] text-white pt-20 px-6 md:px-12"
         id="certificates"
       >
-        <h2 className="text-3xl font-bold text-center mb-10">
-          <i className="fa fa-certificate mr-2"></i> Certificates
+        <h2 className="text-3xl font-bold flex items-center gap-2 mb-3 justify-center">
+          <Award className="w-8 h-8 text-yellow-400" />
+          Certificates
         </h2>
 
         <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
