@@ -110,6 +110,7 @@ export const SKILLS = [
 ];
 export const PROFILE_EMAIL = "mythilijobofficial@gmail.com";
 export const NAV_BAR = ["Home", "About", "Skills", "Projects", 
+  // "Certificates",
   // "Services"
   // "Contact"
 ];

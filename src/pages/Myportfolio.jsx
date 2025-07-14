@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import Profile from "../assets/profile.png"; // your profile image
 import cv from "../assets/Mythili_S.pdf"; // your profile image
+// import certificateImg from "../assets/mern_certificate.jpg"; // replace with your image path
+// import certificatePDF from "../assets/mern_certificate.pdf"; // optional PDF
+let certificateImg;
+let certificatePDF;
 
 import {
   SKILLS,
@@ -18,7 +22,6 @@ import {
   CONTACT,
   MERN_PROJECT_DETAILS,
 } from "../Utility/CommonFile";
-
 
 function Myportfolio() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -74,6 +77,7 @@ function Myportfolio() {
                 "About",
                 "Skills",
                 "Projects",
+                // "Certificates",
                 // "Services"
                 // "Contact"
               ].map((item) => (
@@ -113,8 +117,9 @@ function Myportfolio() {
             <p className="text-lg font-light">{ROLE_DEC}</p>
             <br />
             <p className="text-lg leading-relaxed text-justify">
-             
-              Currently undergoing professional training in MERN Stack (MongoDB, Express.js, Node.js) since May 2025 to transition into a full-stack developer role
+              Currently undergoing professional training in MERN Stack (MongoDB,
+              Express.js, Node.js) since May 2025 to transition into a
+              full-stack developer role
             </p>
             <br />
             <div className="flex flex-col lg:flex-row gap-4 mt-6 items-center sm:items-start">
@@ -358,42 +363,6 @@ function Myportfolio() {
                       ))}
                     </div>
                   </div>
-                  {/* <div className="flex flex-wrap gap-2 mt-2">
-                    <span className="text-sm font-bold text-[#ffbd39]">
-                      Tech:
-                    </span>
-                    {item.tech.map((itemTech, key) => (
-                      <>
-                        <div className="">
-                          <span
-                            key={itemTech}
-                            className="bg-sky-700 px-3 py-1 rounded-full text-xs"
-                          >
-                            {itemTech}
-                          </span>
-                        </div>
-                        
-                      </>
-                    ))}
-                  </div> */}
-                  {/* <div className="flex flex-wrap gap-2 mt-2">
-                    {item.role.map((itemTech, key) => (
-                      <>
-                        {key === 0 && (
-                          <span className="text-sm font-bold text-[#ffbd39]">
-                            Role:
-                          </span>
-                        )}
-
-                        <span
-                          key={itemTech}
-                          className="bg-sky-700 px-3 py-1 rounded-full text-xs"
-                        >
-                          {itemTech}
-                        </span>
-                      </>
-                    ))}
-                  </div> */}
                 </div>
               </>
             );
@@ -415,55 +384,35 @@ function Myportfolio() {
                   className="bg-[#1a2238] rounded-xl shadow-lg p-6 space-y-3 hover:scale-[1.02] transition duration-300"
                   key={key}
                 >
-                  
-                
-              <div className="flex justify-between items-center flex-wrap gap-3">
-  <h3 className="text-xl font-bold text-[#ffbd39]">
-    {item.project_name}
-  </h3>
+                  <div className="flex justify-between items-center flex-wrap gap-3">
+                    <h3 className="text-xl font-bold text-[#ffbd39]">
+                      {item.project_name}
+                    </h3>
 
-  <div className="flex gap-4">
-   <a
-  href={item.live_url}
-  target="_blank"
-  className="bg-green-600 hover:bg-green-700 text-white text-[11px] sm:text-xs px-3 sm:px-4 py-1.5 sm:py-2 rounded font-bold text-center"
->
-  Live Demo
-</a>
+                    <div className="flex gap-4">
+                      <a
+                        href={item.live_url}
+                        target="_blank"
+                        className="bg-green-600 hover:bg-green-700 text-white text-[11px] sm:text-xs px-3 sm:px-4 py-1.5 sm:py-2 rounded font-bold text-center"
+                      >
+                        Live Demo
+                      </a>
 
-<a
-  href={item.code_url}
-  target="_blank"
-  className="bg-gray-700 hover:bg-gray-600 text-white text-[11px] sm:text-xs px-3 sm:px-4 py-1.5 sm:py-2 rounded font-bold text-center"
->
-  View Code
-</a>
-
-  </div>
-</div>
-
+                      <a
+                        href={item.code_url}
+                        target="_blank"
+                        className="bg-gray-700 hover:bg-gray-600 text-white text-[11px] sm:text-xs px-3 sm:px-4 py-1.5 sm:py-2 rounded font-bold text-center"
+                      >
+                        View Code
+                      </a>
+                    </div>
+                  </div>
 
                   {/* <p className="text-sm text-gray-300">{item.company_name}</p> */}
                   <p className="text-sm leading-relaxed text-gray-200">
                     {item.des}
                   </p>
-                  {/* <div className="flex flex-wrap gap-2 mt-2">
-                    {item.tech.map((itemTech, key) => (
-                      <>
-                        {key === 0 && (
-                          <span className="text-sm font-bold text-[#ffbd39]">
-                            Tech:
-                          </span>
-                        )}
-                        <span
-                          key={itemTech}
-                          className="bg-sky-700 px-3 py-1 rounded-full text-xs"
-                        >
-                          {itemTech}
-                        </span>
-                      </>
-                    ))}
-                  </div> */}
+
                   <div className="grid grid-cols-[60px_1fr] gap-2 items-start">
                     <span className="text-sm font-bold text-[#ffbd39]">
                       Tech:
@@ -494,104 +443,67 @@ function Myportfolio() {
                       ))}
                     </div>
                   </div>
-                  {/* <div className="flex gap-4 pt-3">
-                <a href={item.live_url} target="_blank" className="bg-green-600 hover:bg-green-700 text-white text-xs px-4 py-2 rounded font-bold">
-                  Live Demo
-                </a>
-                <a href={item.code_url} target="_blank" className="bg-gray-700  hover:bg-gray-400 text-white text-xs px-4 py-2 rounded font-bold">
-                  View Code
-                </a>
-              </div> */}
-                  {/* <div className="flex flex-wrap gap-2 mt-2">
-                    {item.role.map((itemTech, key) => (
-                      <>
-                        {key === 0 && (
-                          <span className="text-sm font-bold text-[#ffbd39]">
-                            Role:
-                          </span>
-                        )}
-
-                        <span
-                          key={itemTech}
-                          className="bg-sky-700 px-3 py-1 rounded-full text-xs"
-                        >
-                          {itemTech}
-                        </span>
-                      </>
-                    ))}
-                  </div> */}
                 </div>
               </>
             );
           })}
         </div>
       </section>
- 
 
       {/* <section
-        id="contact"
-        className="bg-[#0b1120] text-white pt-20 px-6 md:px-12 pb-10"
+        className="bg-[#0b1120] text-white pt-20 px-6 md:px-12"
+        id="certificates"
       >
         <h2 className="text-3xl font-bold text-center mb-10">
-          <i className="fa fa-envelope mr-2"></i> {CONTACT}
+          <i className="fa fa-certificate mr-2"></i> Certificates
         </h2>
 
-        <div className="max-w-3xl mx-auto bg-[#131c31] p-6 md:p-10 rounded-xl shadow-lg shadow-blue-400/10">
-          <form className="space-y-6">
-            <div>
-              <label
-                htmlFor="name"
-                className="block text-sm font-medium text-[#ffbd39] mb-1"
-              >
-                Your Name
-              </label>
-              <input
-                type="text"
-                id="name"
-                placeholder="Enter your name"
-                className="w-full px-4 py-2 bg-[#0b1120] border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-white"
-              />
+        <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+          <div className="bg-[#1a2238] rounded-xl shadow-lg p-6 space-y-3 hover:scale-[1.02] transition duration-300">
+            <h3 className="text-xl font-bold text-[#ffbd39]">
+              MERN Stack Development
+            </h3>
+            <p className="text-sm text-gray-300">
+              FITA Academy | April 2025 – July 2025
+            </p>
+            <p className="text-sm leading-relaxed text-gray-200">
+              Completed hands-on training in MongoDB, Express.js, React.js, and
+              Node.js with real-time project implementation, backend API
+              creation, and fullstack deployment.
+            </p>
+
+            <div className="grid grid-cols-[60px_1fr] gap-2 items-start">
+              <span className="text-sm font-bold text-[#ffbd39]">Tools:</span>
+              <div className="flex flex-wrap gap-2">
+                {["VS Code", "Postman", "Swagger"].map((tool) => (
+                  <span
+                    key={tool}
+                    className="bg-sky-700 text-white px-3 py-1 rounded-full text-xs"
+                  >
+                    {tool}
+                  </span>
+                ))}
+              </div>
             </div>
 
-            <div>
-              <label
-                htmlFor="email"
-                className="block text-sm font-medium text-[#ffbd39] mb-1"
+            <div className="flex gap-4">
+              <a
+                href={cv} // Replace with your real file path
+                target="_blank"
+                className="bg-green-600 hover:bg-green-700 text-white text-[11px] sm:text-xs px-4 py-2 rounded font-bold text-center"
               >
-                Email Address
-              </label>
-              <input
-                type="email"
-                id="email"
-                placeholder="Enter your email"
-                className="w-full px-4 py-2 bg-[#0b1120] border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-white"
-              />
-            </div>
+                View Certificate
+              </a>
 
-            <div>
-              <label
-                htmlFor="message"
-                className="block text-sm font-medium text-[#ffbd39] mb-1"
+              <a
+                href={cv} // optional image preview
+                target="_blank"
+                className="bg-gray-700 hover:bg-gray-600 text-white text-[11px] sm:text-xs px-4 py-2 rounded font-bold text-center"
               >
-                Message
-              </label>
-              <textarea
-                id="message"
-                rows="4"
-                placeholder="Write your message..."
-                className="w-full px-4 py-2 bg-[#0b1120] border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-white"
-              ></textarea>
+                View Image
+              </a>
             </div>
-
-            <div className="text-center">
-              <button
-                type="submit"
-                className="px-6 py-2 rounded-full bg-[#ffbd39] hover:bg-[#0d6efd] text-white font-semibold shadow-md transition duration-300"
-              >
-                Send Message
-              </button>
-            </div>
-          </form>
+          </div>
         </div>
       </section> */}
 
